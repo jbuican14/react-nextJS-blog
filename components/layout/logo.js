@@ -1,10 +1,8 @@
 import React, {Fragment} from "react";
+import classes from "./logo.module.css";
 
-export const Layout = (props) => {
-  return (
-    <Fragment>
-      <MainNavigation />
-      <main>{props.children}</main>
-    </Fragment>
-  );
-};
+function Logo() {
+  return <div className={classes.logo}>Juti's Next JS blog</div>;
+}
+
+export default Logo;

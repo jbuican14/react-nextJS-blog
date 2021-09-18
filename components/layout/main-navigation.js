@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "./logo";
+import classes from "./main-navigation.module.css";
 
-export const MainNavigation = () => {
+function MainNavigation() {
   return (
-    <header>
+    <header className={classes.header}>
       <Link href="/">
         <a>
           <Logo />
@@ -22,4 +23,6 @@ export const MainNavigation = () => {
       </nav>
     </header>
   );
-};
+}
+
+export default MainNavigation;
