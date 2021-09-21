@@ -12,14 +12,20 @@ function PostItem(props) {
 
   const imagePath = `/images/posts/${slugs}/${image}`;
   const linkPath = `/posts/${slugs}`;
-  console.log("imagePath", imagePath);
+  // console.log("imagePath", imagePath);
 
   return (
     <li className={classes.post}>
       <Link href={linkPath}>
         <a>
           <div className={classes.image}>
-            <Image src={imagePath} alt={title} width="300" height="200" />
+            <Image
+              src={imagePath}
+              alt={title}
+              width="300"
+              height="200"
+              layout="responsive"
+            />
           </div>
           <div className={classes.content}>
             <h3>{title}</h3>
