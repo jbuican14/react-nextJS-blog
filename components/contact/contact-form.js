@@ -10,7 +10,7 @@ function ContactForm() {
 
     // option for validate data client side
 
-    fetch("/api/contact", {
+    fetch("/api/contact/", {
       method: "POST",
       body: JSON.stringify({
         email: enteredEmail,
